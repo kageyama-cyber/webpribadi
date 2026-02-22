@@ -1,58 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1{
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Album Sederhana</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 15px;
+    background-image: url("BACKGROUND1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Judul */
+h1{
+    padding: 20px;
+    background-color: #ffd6cc;
     text-align: center;
-    font-size: 40px;
-    border-bottom: 3px solid rgb(51, 0, 255);
-    display: inline-block;
-    padding-bottom: 10px;
-    background-color: lightblue;
+    border-bottom: 3px solid red;
 }
-        p{
-            font-size: 5mm;
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #ccd5ff83;
-        }
-        body {
-            background-image: url("background.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .barcelona {
+
+/* Paragraf umum */
+p{
+    font-size: 16px;
+    background-color: #ccd5ff9d;
+    padding: 10px;
+}
+
+/* Sub judul */
+.subbab{
+    background-color: #ffd6cc;
+    text-align: center;
+    border-bottom: 3px solid red;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+/* Container gambar + teks */
+.skinnana, .gambardua{
     display: flex;
-    align-items: flex-start;   /* agar sejajar tengah */
-    gap: 10px;             /* jarak antara gambar dan teks */
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.barcelona img{
-    width: 300px; /* bisa disesuaikan */
+/* Gambar */
+.skinnana img,
+.gambardua img{
+    width: 350px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
+/* Paragraf samping gambar */
+.paragrafnana,
+.paragrafdua{
+    font-size: 16px;
+    background-color: #ccd5ff9d;
+    padding: 10px;
+    border-radius: 10px;
+}
 
+/* Tanggal */
+.paragrafbawah{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    background-color: #ffbf0098;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
 
-    </style>
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px){
+    .skinnana, .gambardua{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1> BELAJAR HTML</h1>
-    <p>Barcelona adalah salah satu kota paling terkenal di dunia yang terletak di wilayah Catalonia, Spanyol. Kota ini dikenal karena perpaduan yang harmonis antara sejarah, seni, budaya, dan kehidupan modern yang dinamis. Berada di tepi Laut Mediterania, Barcelona menawarkan pemandangan pantai yang indah sekaligus arsitektur megah yang memikat jutaan wisatawan setiap tahunnya.
 
-Salah satu daya tarik utama kota ini adalah karya arsitek legendaris Antoni Gaudi, seperti Sagrada Familia yang ikonik dan belum sepenuhnya selesai dibangun. Selain itu, ada juga Park Guell yang penuh warna serta Casa Batllo yang memiliki desain unik dan artistik.
+<h1>ALBUM SEDERHANA PIZNEL 2023 - 2026</h1>
 
-Barcelona juga terkenal di dunia olahraga melalui klub sepak bola ternama, FC Barcelona, yang bermarkas di stadion Camp Nou. Klub ini menjadi simbol kebanggaan masyarakat setempat.
+<p>
+Album ini adalah ruang kecil tempat waktu seolah berhenti sejenak...
+</p>
 
-Selain wisata dan olahraga, Barcelona memiliki kehidupan malam yang semarak, kuliner khas Spanyol seperti tapas, serta jalan terkenal seperti La Rambla yang selalu ramai oleh wisatawan dan seniman jalanan.
+<div class="subbab">
+<h2>INI BEBERAPA MOMEN KITAA:</h2>
+</div>
 
-Dengan kombinasi keindahan alam, warisan budaya, dan semangat modern yang kuat, Barcelona menjadi kota yang tidak hanya indah untuk dikunjungi, tetapi juga kaya akan pengalaman dan cerita yang tak terlupakan..</p>
-
-    <div class="barcelona">
-    <img src="logo.WEBP" alt="" width="300">
-    <div class="text">
-        <p>Klub sepak bola terkenal dari Spanyol.</p>
+<div class="skinnana">
+    <img src="foto1.jfif" alt="foto1">
+    <div class="paragrafnana">
+        <p>Kamu inget ini tidaa sayanggg...</p>
+        <p>Ini waktu kamu kepengen skin nana, waktu itu kamu ngode aku buat beliin ini skin.</p>
+        <p>Dan akhirnya pada bulan Desember 2023 aku berhasil beliin kamu skin kesukaan kamuuu.</p>
     </div>
 </div>
+
+<div class="paragrafbawah">
+14 Desember 2023
+</div>
+
+<div class="gambardua">
+    <img src="gambar2.jfif" alt="gambar2">
+    <div class="paragrafdua">
+        <p>Waktu itu kita belum terlalu sering mabar loh...</p>
+        <p>Mungkin karena sama-sama canggung jadinya engga terlalu sering bahkan komunikasi aja kita jarang...</p>
+        <p>Dari situ akhirnya kita sama-sama berani buat main berdua...</p>
+    </div>
+</div>
+
+<div class="paragrafbawah">
+23 Desember 2023
+</div>
+
+</body>
+</html>
